@@ -29,14 +29,14 @@
 
   const webComponent = document.querySelector('em-view');
   // here we are calling the custom event ouput defined in the custom-element
-  // webComponent.addEventListener('emCustomEvent', event => {
-  //   alert(event.detail);
+  webComponent.addEventListener('emCustomEvent', event => {
+    alert(event.detail);
 
-  // });
+  });
 
 
-  var items = webComponent.items = [1, 2, 3];
-  console.log('items:', items);
+  // var items = webComponent.items = [1, 2, 3];
+  // console.log('items:', items);
 </script>
 
 
